@@ -1,6 +1,6 @@
 # Scrapper using Selenium
 
-This is having Scrapper for Myntra and Nykaa which could scrap data with multiple imformations using **selenium webDriver**. This avoided the bot recognizer and Js dynamically coded information. This could not be done using bs4 as **requests(url)** only takes raw HTML, if any information is dynamic and written in JS this could not be fetched from bs4. Also this gives hints to bot recognizer to halt the scrapping. But the webdriver using selenium opens up the browser, it scrawl over the browser, interacts with the browser which provides realistic appearance to anti-bot system. 
+This is having Scrapper for Myntra and Nykaa which could scrap data with multiple informations using **selenium webDriver**. This avoided the bot recognizer and Js dynamically coded information. This could not be done using bs4 as **requests(url)** only takes raw HTML, if any information is dynamic and written in JS this could not be fetched from bs4. Also this gives hints to bot recognizer to halt the scrapping. But the webdriver using selenium opens up the browser, it scrawl over the browser, interacts with the browser which provides realistic appearance to anti-bot system. 
 
 ## 🔍 Data Format : JSON
 
