@@ -12,16 +12,16 @@ def scrapperMyntra(key_word, limit_for_each_keywords,data_myntra_list):
     driver = webdriver.Chrome(service=chrome_service, options=chrome_options)
     path_param = key_word.replace(" ", "-")
     url = base_url + path_param
-    # url = "https://www.myntra.com/men-tshirts"
     driver.get(url)
     time.sleep(5)
 
     product_element = driver.find_element(By.CLASS_NAME, 'results-base')
     product_list = product_element.find_elements(By.CLASS_NAME, 'product-base')
-    data_myntra = {}
     for scrappeCnt,product in enumerate(product_list): # one chunk of products
         if scrappeCnt >= limit_for_each_keywords:
             break
+        
+        data_myntra = {}
 
         product_id = product.get_attribute('id')
 
